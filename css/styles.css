@@ -1,0 +1,65 @@
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: #222222;
+  font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+  box-sizing: border-box; }
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
+/**
+ * Basic styles for links
+ */
+a {
+  color: #e50050;
+  text-decoration: none; }
+  a:hover, a:active, a:focus {
+    color: #222222;
+    text-decoration: underline; }
+
+header {
+  height: 160px;
+  display: flex;
+  background-color: tomato;
+  color: white; }
+  header img {
+    max-width: 160px; }
+
+h1, h2 {
+  flex: 1 1 50%; }
+
+nav {
+  background-color: #666;
+  display: flex;
+  align-items: center;
+  padding: 30px 5px;
+  height: 160px; }
+  nav img {
+    width: 14em; }
+  nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around; }
+    nav ul li {
+      color: white;
+      margin: 0 5px; }
+      @media screen and (max-width: 730px) {
+        nav ul li {
+          display: none; } }
+
+/*# sourceMappingURL=styles.css.map */
