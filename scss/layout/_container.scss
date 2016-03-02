@@ -47,3 +47,9 @@ section {
     }
   }
 }
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  @extend %search-bar;
+}

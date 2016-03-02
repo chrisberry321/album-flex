@@ -27,6 +27,14 @@ nav {
     }
   }
 }
+a {
+  color: white;
+  &:hover {
+    cursor: pointer;
+    color:tomato;
+    text-decoration: none;
+  }
+}
 
   .gallery-nav {
     ul li:first-child {
